@@ -1,9 +1,10 @@
 const startFunc = ({ keys, inData }) => {
     const tbody = document.getElementById('tableBody');
+    const dataToShow = inData;
 
     tbody.innerHTML = '';
 
-    inData.forEach((item, i) => {
+    dataToShow.forEach((item, i) => {
         const tr = document.createElement('tr');
         tr.className = 'border-t hover:bg-blue-100 odd:bg-gray-100';
 

@@ -1,10 +1,10 @@
 import { startFunc as buildHeader } from "./BuildHeader/start.js";
 import { startFunc as buildBody } from "../../../../buildBody.js";
-import { setData, getData } from "../../../../tableStore.js";
+import { setData, getFinalData } from "../../../../tableStore.js";
 
 let StartFunc = ({ inResponseAsJson }) => {
     setData(inResponseAsJson)
-    const dataToShow = getData();
+    const dataToShow = getFinalData();
 
     const tbody = document.getElementById('tableBody');
     const thead = document.getElementById('tableHead');

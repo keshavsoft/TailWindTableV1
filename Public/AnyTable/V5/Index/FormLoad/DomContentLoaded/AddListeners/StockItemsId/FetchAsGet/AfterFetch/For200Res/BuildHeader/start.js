@@ -1,10 +1,10 @@
 import { startFunc as sortData } from "./sortData.js";
 import { startFunc as updateHeaderUI } from "./updateHeaderUI.js";
-import { getData } from "../../../../../tableStore.js";
+import { getFinalData } from "../../../../../tableStore.js";
 
 const startFunc = ({ thead, keys, renderBody }) => {
     let sortState = {};
-    let dataRef = getData();
+    let dataRef = getFinalData();
 
     thead.innerHTML = '';
     const tr = document.createElement('tr');
