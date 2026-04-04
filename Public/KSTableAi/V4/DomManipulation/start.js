@@ -23,3 +23,4 @@ export {
     getSearchSingleColumnInput,
     getTableNameClass
 };
+

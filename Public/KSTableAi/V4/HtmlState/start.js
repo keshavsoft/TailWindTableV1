@@ -1,5 +1,6 @@
 export const createState = () => {
     let tableContainerId = "kSTableContainer";
+    const tableNameClass = "tableNameClass";
 
     return {
         setTableContainerId(val) {
@@ -7,6 +8,9 @@ export const createState = () => {
         },
         getTableContainerId() {
             return tableContainerId;
+        },
+        getTableNameClass() {
+            return tableNameClass;
         }
     };
 };
