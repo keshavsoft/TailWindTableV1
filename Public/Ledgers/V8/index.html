@@ -85,64 +85,17 @@ md:space-y-0 md:space-x-10 md:p-0 md:w-auto md:max-h-none md:opacity-100" transi
 
         <!-- TABLE CONTAINER -->
         <div id="kSTableContainer" class="max-w-6xl mx-auto p-2">
-
             <div class="flex items-center justify-between px-6 pt-2 pb-2">
-
-                <!-- LEFT (single line) -->
                 <div class="flex items-center gap-3">
-                    <h5 class="text-lg font-semibold text-gray-900">
-                        Members list
+                    <h5 class="tableNameClass text-lg font-semibold text-gray-900">
+                        Table Name
                     </h5>
-                    <span class="text-sm text-gray-500">
-                        See information about all members
-                    </span>
                 </div>
 
                 <!-- RIGHT (compact search) -->
-                <div class="relative w-60">
-                    <input id="tableSearch" type="text" placeholder="Search..."
-                        class="w-full h-9 pl-3 pr-9 text-sm border border-gray-300 rounded-md focus:border-gray-900 focus:ring-0 outline-none" />
-
-                    <svg class="absolute right-2 top-2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-5.2-5.2M15 10a5 5 0 11-10 0 5 5 0 0110 0z" />
-                    </svg>
-                </div>
-
-            </div>
-
-            <!-- TABLE -->
-            <div class="rounded-b-lg shadow-md overflow-x-auto">
-                <table class="w-full bg-white" id="myTableId">
-                    <thead id="tableHead"></thead>
-                    <tbody id="tableBody"></tbody>
-                </table>
-            </div>
-
-        </div>
-
-
-
-        <!-- TABLE CONTAINER -->
-        <div id="kSTableContainer1" class="max-w-6xl mx-auto p-2">
-
-            <div class="flex items-center justify-between px-6 pt-2 pb-2">
-
-                <!-- LEFT (single line) -->
-                <div class="flex items-center gap-3">
-                    <h5 class="text-lg font-semibold text-gray-900">
-                        Members list
-                    </h5>
-                    <span class="text-sm text-gray-500">
-                        See information about all members
-                    </span>
-                </div>
-
-                <!-- RIGHT (compact search) -->
-                <div class="relative w-60">
-                    <input id="tableSearch" type="text" placeholder="Search..."
-                        class="w-full h-9 pl-3 pr-9 text-sm border border-gray-300 rounded-md focus:border-gray-900 focus:ring-0 outline-none" />
+                <div class="relative w-full max-w-md">
+                    <input type="text" placeholder="search..."
+                        class="tableSearchMultiColumnClass w-full h-9 pl-3 pr-9 text-sm border border-gray-300 rounded-md focus:border-gray-900 focus:ring-0 outline-none" />
 
                     <svg class="absolute right-2 top-2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24">
@@ -156,8 +109,8 @@ md:space-y-0 md:space-x-10 md:p-0 md:w-auto md:max-h-none md:opacity-100" transi
             <!-- TABLE -->
             <div class="rounded-b-lg shadow-md overflow-x-auto">
                 <table class="table w-full bg-white">
-                    <thead class="thead"></thead>
-                    <tbody class="tbody"></tbody>
+                    <thead class="theadClass"></thead>
+                    <tbody class="tbodyClass"></tbody>
                 </table>
             </div>
 
