@@ -2,11 +2,7 @@ import { createStore } from "./tableStore.js";
 import { createState } from "./HtmlState/start.js";
 import { createDomManipulation } from "./domManipulation.js";
 
-import { renderTableHeading } from "./BuildTotal/BuildFirstColumn/TableHeading/start.js";
-import { buildHeader } from "./BuildTotal/BuildTable/BuildHeader/start.js";
-import { buildBody } from "./BuildTotal/BuildTable/BuildBody/start.js";
-
-import { hookAllListeners } from "./AddListeners/start.js";
+import { render } from "./BuildTotal/start.js";
 
 class KSAiTable {
     constructor({ inTableContainerId, inDataAsCollection, inTableName = "KeshavTable" }) {
@@ -26,29 +22,7 @@ class KSAiTable {
 
         this.uiState.setTableContainerId(inTableContainerId);
 
-        this.render();
-        
-        hookAllListeners({
-            inContainerEl: this.containerEl,
-            inDataStore: this.dataStore,
-            inDom: this.dom
-        });
-    };
-
-    render() {
-        renderTableHeading({
-            inContainerEl: this.containerEl,
-            inDataStore: this.dataStore,
-            inDom: this.dom
-        });
-
-        buildHeader({
-            inContainerEl: this.containerEl,
-            inDataStore: this.dataStore,
-            inDom: this.dom
-        });
-
-        buildBody({
+        render({
             inContainerEl: this.containerEl,
             inDataStore: this.dataStore,
             inDom: this.dom

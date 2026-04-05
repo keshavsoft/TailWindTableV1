@@ -1,4 +1,4 @@
-import { buildBodyAtThatState } from "../../BuildTotal/BuildTable/BuildBody/atThatState.js";
+import { buildBodyAtThatState } from "./atThatState.js";
 
 let timer;
 
