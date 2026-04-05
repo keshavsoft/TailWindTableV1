@@ -12,7 +12,7 @@ let StartFunc = ({ inResponseAsJson }) => {
     initTable({
         containerId: 'kSTableContainer',
         data: inResponseAsJson,
-        tableName: "Ledgers"
+        tableName: "StockItems"
     });
 };
 
