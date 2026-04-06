@@ -6,7 +6,8 @@ let StartFunc = ({ inResponseAsJson }) => {
 
     window.KSTable.init({
         containerId: "kSTableContainer",
-        data: inResponseAsJson
+        data: inResponseAsJson,
+        tableName: "Ledgers"
     });
 
     // initTable({
