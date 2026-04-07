@@ -1,4 +1,4 @@
-import { initTable } from "./KSTableAi/V7/entry.js";
+import { initTable } from "./KSTableAi/V8/entry.js";
 
 let startFunc = async () => {
     const config = {
@@ -15,6 +15,7 @@ let startFunc = async () => {
                 showVertical: false
             },
             table: {
+                showFooter: true
             },
             dataList: {
                 show: true
