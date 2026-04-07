@@ -1,4 +1,4 @@
-import { initTable } from "./KSTableAi/V5/entry.js";
+import { initTable } from "./KSTableAi/V6/entry.js";
 
 let startFunc = async () => {
     const config = {
