@@ -1,4 +1,4 @@
-// import { initTable } from "./KSTableAi/V11/entry.js";
+import { initTable } from "./KSTableAi/V11/entry.js";
 
 let startFunc = async () => {
     const config = {
@@ -38,10 +38,7 @@ let startFunc = async () => {
         }
     };
 
-    window.KSTable.init(config);
-
-
-    // await initTable(config);
+    await initTable(config);
 };
 
 startFunc();
