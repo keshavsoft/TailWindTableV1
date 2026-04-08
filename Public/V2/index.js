@@ -1,4 +1,4 @@
-import { initTable } from "./KSTableAi/V8/entry.js";
+import { initTable } from "./KSTableAi/V9/entry.js";
 
 let startFunc = async () => {
     const config = {
@@ -15,11 +15,22 @@ let startFunc = async () => {
                 showVertical: false
             },
             table: {
-                showFooter: true
+                showFooter: true,
+                footer: {
+                    showDataList: true
+                }
             },
             dataList: {
                 show: true
             }
+        },
+        columnsConfig: [
+            { columnName: "pk", isPrimaryKey: true, isVisible: false },
+            { columnName: "LedgerName", isRequired: true, tableFooterDataListShow: true },
+            { columnName: "LedgerType", isRequired: true }
+        ],
+        layout: {
+            verticalPosition: "top" // or left/right/bottom
         }
     };
 
